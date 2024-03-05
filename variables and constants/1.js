@@ -1,64 +1,35 @@
-// let o'zgaruvchini elon qilish uchun ishlatiladi
-// let name = 'Salom dunyo';
+let name = "islomjon";
+
+console.log(name);
 
 
-// console.log(name);
+/// 1. kalit so'z bo'lmasligi kerak
+// let for while
 
-// 1. kalit so'z bo'lmasligi kerak.
-// if else for 
+// 2. raqam bilan boshlanishi mumkin emas
 
-// 2 o'zgruvchi nomi raqam bilanboshlanishi mumkin emas
+// 123 332  33 x 
 
-// 1name, 17ddd
+// 3. Probel qoyish mumkin emas
 
-// 3 o'zgaruvchilar nomida probel yoki chiqicha bo'lishi mumkin emas
+/// 4. Case-sensitive 
+/// name =x Name
 
+/// 4. Mazmunli nom berish kerak bo'ladi
 
-// 4 Katta va kichik harflarda farq qiladi...
+// xxx, abs, ghfjf, 
 
-
-// 5 o'zgaruvchi nomi mazmunli bo'ishi kerak.  
-// x, ab, gh, jk, pooo 
-
-
-// 6 bir paytni o'zida kopplab o'zgaruvchi qabul qilish mumkin.
-
-// let firstname = "Islomjon";
-
-// let age = 19;
-
-// let gender = "M"
-
-/* 
-contant o'zgarmaslarni elon qilish
-*/
-
-// const h = 6.626;
-
-// console.log(h);
+// 6
 
 
-/// O'ZGARUVCHILARNING TURLAR 
-/* 
-##############################
-##############################
-######1. PRIMITIVE\VALUE #####
-##############################
-##############################
-######2. REFRANCE ############
-##############################
-##############################
-##############################
-PRIMITIVE\VALUE   ############################## STRING/NUMBER/BOOLEN/UNDEFINED/NULL/SYMBOL
-##############################
-*/
+let firstname = "olim";
+let age = 81;
+let gender = 'Male';
+
+console.log(firstname, age, gender);
 
 
-let name = "Islomjon"; //STRING
-let age = 19; //NUMBER
-let RealMadrid = true; //BOOLEN
+const pi = 3.14;
+console.log(pi);
 
-let Mbappe = undefined; ///UNDEFINED
 
-let choosecar = null; // null
-choosecar = "Merc";
