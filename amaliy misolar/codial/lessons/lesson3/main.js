@@ -66,7 +66,7 @@
 // let text1 = "Lorem ipsum dolor sit amet."
 // let text2 = "adipisicing elit. Molestiae, cupiditate."
 // let text3 = text1.concat(text2)
-// console.log(text3.toLowerCase);
+// console.log(text3.toLowerCase());
 
 // 11
 
