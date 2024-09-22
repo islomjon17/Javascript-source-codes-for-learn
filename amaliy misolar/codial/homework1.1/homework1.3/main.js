@@ -83,14 +83,45 @@
 // // 7) Foydalanuvchidan raqamli matn so‘rab, agar matn faqat
 // raqamlardan iborat bo‘lsa, raqamlarni teskari tartibda chiqarish,
 // aks holda "Noto‘g‘ri kirish" deb xabar bering.
+// let userInput = prompt("Raqamli matn kiriting:");
+
+// if (/^\d+$/.test(userInput)) {
+//   let reversed = userInput.split("").reverse().join("");
+//   console.log("Teskari tartibda:", reversed);
+// } else {
+//   console.log("Noto'g'ri kirish");
+// }
 
 // // 8) Foydalanuvchidan tug‘ilgan yilini so‘rab, agar yil 2000
 // yildan katta yoki teng bo‘lsa "Yosh foydalanuvchi", aks holda
 // "Kattaroq foydalanuvchi" deb chiqarish.
 
+// const yosh = parseInt(prompt("Tug'ilgan yilizi kiriting: "));
+
+// const hozirgiyil = new Date().getFullYear();
+
+// if (yosh >= 2000 && yosh <= hozirgiyil) {
+//   console.log("Yosh foydalanuvchi..");
+// } else if (yosh > hozirgiyil) {
+//   console.log("Siz hali tug'ilmagansiz");
+// } else {
+//   console.log("Kattaroq foydalanuvchi");
+// }
+
 // // 9) Foydalanuvchidan matn so‘rab, agar matnda faqat kichik
 // harflar bo‘lsa, uni katta harflarga o‘zgartiring, aks holda
 // kichik harflarga o‘zgartiring.
+
+// let userInput = prompt("Iltimos, matn kiriting:");
+
+// if (/^[a-z]+$/.test(userInput)) {
+//   // /^[a-z]+$/ - Regular ifoda yordamida matn faqat kichik harflardan iboratligini tekshiradi.
+//   let upperCaseText = userInput.toUpperCase();
+//   console.log("Katta harflarda:", upperCaseText);
+// } else {
+//   let lowerCaseText = userInput.toLowerCase();
+//   console.log("Kichik harflarda:", lowerCaseText);
+// }
 
 // // 10) Foydalanuvchidan telefon raqamini so‘rab, agar raqam
 // uzunligi 10 ta bo‘lsa va faqat raqamlardan iborat bo‘lsa
