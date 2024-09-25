@@ -90,7 +90,7 @@
 // 7-masala let harflar = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 // array berilga ushbu arraydan foydalanib yangi array yarating
 // va o`sha arrayga faqat unli harflarni joylashtiring va consolga chiqaring
-let harflar = ["a", "b", "c", "d", "e", "f", "g"];
+// let harflar = ["a", "b", "c", "d", "e", "f", "g"];
 // let unli = ["a", "i", "o", "u", "o'", "e", ""];
 
 // for (let i = 0; i < harflar.length; i++) {
@@ -119,18 +119,73 @@ let harflar = ["a", "b", "c", "d", "e", "f", "g"];
 // 9-masala ["Abbosbek" , "Islombek","Alijon","Muhammaddiyor",
 // "Mardonbek","Azimjon"]  ushbu arraydan foydalanib yangi array
 // yarating yangi arrayga faqat "bek" qo'shimchasi borlar yozilsin.
+// const sozlar = ["Abbosbek" , "Islombek","Alijon","Muhammaddiyor",
+// "Mardonbek","Azimjon"];
+// const bek_harfli = [];
+// for (let i = 0; i < sozlar.length; i++) {
+//   if (sozlar[i].includes("bek")) {
+//     bek_harfli.push(sozlar[i]);
+//   } else {
+//     console.log("Topilmadi");
+//   }
+// }
+// console.log(bek_harfli);
 
 // 10-masala sozlar = ["JavaScript", "Python", "HTML", "CSS", "React", "Node"];
 // array berilgan berilgan arraydan foydalanib yangi array yarating va arraydagi
 // so`zlarni uzunligi 4 dan kottalarini arrayga qo`shing va consolga chiqaring
+// const sozlar = ["JavaScript", "Python", "HTML", "CSS", "React", "Node"];
+// const matn = [];
+// for (let i = 0; i < sozlar.length; i++) {
+//   if (sozlar[i].length > 4) {
+//     matn.push(sozlar[i]);
+//     console.log(sozlar[i]);
+//   } else {
+//     console.log("topilmadi");
+//   }
+// }
+
+// console.log(matn);
 
 // 11-masala    sozlar = ["apple", "banana", "cherry", "date", "grape"];
 // massiv berilgan berilgan massivdan foydalanib yangi massiv yarating
 // va massivda "b" harfin o`z ichiga olgan so`zlarni consolga chiqaring.
+// const sozlar = ["apple", "banana", "cherry", "date", "grape"];
+// const b_harfli = [];
+// for (let i = 0; i < sozlar.length; i++) {
+//   if (sozlar[i].includes("b")) {
+//     b_harfli.push(sozlar[i]);
+//     console.log(sozlar[i]);
+//   } else {
+//     console.log("Topilmadi");
+//   }
+// }
+
+// console.log(b_harfli);
 // 12-masala  const massiv = [11, 22, 33, 44, 55, 66, 77, 88, 99, 111];
 // array berilga berilgan arraydan foydalanib yangi array yarating va
 // 69 dan kotta bo`lga sonlarni consolga  chiqaring.
 
+// const massiv = [11, 22, 33, 44, 55, 66, 77, 88, 99, 111];
+// const karra = [];
+// for (let i=0; i < massiv.length; i++) {
+//   if (massiv[i] > 69) {
+//     console.log(massiv[i]);
+//     karra.push(massiv[i]);
+//   } else {
+//     console.log("Kichkina");
+//   }
+// }
+
 // 13-masala var sozlar = ["apple", "banana", "orange", "kiwi", "grape"]
 // array berilgan  ushbu arraydan foydalanib arraydagi so`zlarni uzunligi
 // 5 dan kotta bo`lgan so`zlarni consolga chiqaring.
+// const sozlar = ["apple", "banana", "orange", "kiwi", "grape"];
+
+// for (let i = 0; i < sozlar.length; i++) {
+//   if (sozlar[i].length > 5) {
+//     console.log(sozlar[i]);
+//   } else {
+//     console.log("Kichkina");
+//   }
+// }
