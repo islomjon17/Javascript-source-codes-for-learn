@@ -2,14 +2,19 @@
 // sonlardan iborat array berilgan ushbu arraydan
 // foydalanib yangi array yarating va ushbu arrayda
 // faqat juft sonlarni consolga natijani chiqaring.
-// const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const jusft_sonlar = [];
+const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const jusft_sonlar = sonlar.filter((item)=>
+{
+    return item%2 === 0
+}
+);
+
 // for (let i = 1; i <= sonlar.length; i++) {
 //   if (i % 2 == 0) {
 //     jusft_sonlar.push(i);
 //   }
 // }
-// console.log(jusft_sonlar);
+console.log(jusft_sonlar);
 
 //  2-masala sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //   sonlardan iborat array berilgan ushbu arraydan
