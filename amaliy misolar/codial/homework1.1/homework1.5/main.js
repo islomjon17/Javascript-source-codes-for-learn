@@ -147,18 +147,63 @@
 // Berilgan satrlar massivini yagona satrga
 //  birlashtiradigan funksiya yozing.
 // Ps: join() metodidan foydalaning.
+// function qoshish(a) {
+//   return a.join();
+// }
+
+// const elements = ["Fire", "Air", "Water"];
+// console.log(qoshish(elements));
 // 13. Massiv ichida aniq qiymat borligini tekshirish
 // Berilgan qiymat massivda bor yoki yo'qligini
 //  aniqlaydigan funksiya yozing.
+// function boryoq(a, b) {
+//   if (a.includes(b)) {
+//     console.log("bor");
+//   } else {
+//     console.log("Yoq");
+//   }
+// }
+
+// const elements = ["Fire", "Air", "Water"];
+// console.log(qoshish(elements, "Fire"));
+
 // 14. Massiv ichidagi unikal elementlarni topish
 // Berilgan massiv ichida faqat takrorlanmagan
 // elementlarni qaytaradigan funksiya yozing.
+// function unikal(list) {
+//   return list.filter(
+//     (element, index, self) =>
+//       self.indexOf(element) === self.lastIndexOf(element)
+//   );
+// }
+
+// const list1 = [1, 2, 2, 3, 4, 4, 5];
+// console.log(unikal(list1));
+
 // 15. Massivdagi juft sonlar sonini sanash
 // Berilgan massiv ichida nechta juft son borligini
 // aniqlaydigan funksiya yozing.
+// function juftson(list) {
+//   return list.filter((num) => num % 2 === 0).length;
+// }
+
+// const list = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(juftson(list));
+
 // 16. Birinchi harfini olib tashlash
 // Berilgan satrdagi birinchi harfni olib
 // tashlaydigan funksiya yozing.
+// function ol_bir_el(str) {
+//   return str.substring(1);
+// }
+
+// console.log(ol_bir_el("Salom Dunyo"));
+
 // 17. So'zlarni teskari tartibda chiqarish
 // Berilgan satrni so'zlar teskari tartibda
 // bo'lgan holatda qaytaradigan funksiya yozing.
+// function teskari(str) {
+//     return str.split(' ').reverse().join(' ');
+// }
+
+// console.log(teskari("Salom dunyo")); 
