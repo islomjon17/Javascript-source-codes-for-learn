@@ -36,23 +36,113 @@
 // 4. Katta va kichik harflarni almashtirish
 // Berilgan satrda har bir harfni katta yoki
 // kichik harfga almashtiradigan funksiya yozing.
+
+// function teskari_harf(gap) {
+//   return gap
+//     .split("")
+//     .map((harf) =>
+//       harf === harf.toUpperCase() ? harf.toLowerCase() : harf.toUpperCase()
+//     )
+//     .join("");
+// }
+
+// let gap = "Salom Dunyo";
+// console.log(teskari_harf(gap));
+
 // 5.Berilgan sonlar massivida eng katta va eng
 // kichik sonni topadigan funksiya yozing.
+
+// function Kvadrat_list(a) {
+//   const list2 = [];
+//   list2.push(Math.min(...a));
+//   list2.push(Math.max(...a));
+//   return list2;
+// }
+// const list1 = [1, 2, 3, 4, 5, 6, 6, 7, 8];
+
+// console.log(Kvadrat_list(list1));
+
 // 6.Satr va harf qabul qiladigan funksiya yarating
 // Berilgan satrda o'sha harf necha marta takrorlanganini aniqlasin.
+// function harf_sanash(a) {
+//   const harfsoni = {};
+
+//   for (let i = 0; i < a.length; i++) {
+//     const harf = a[i];
+//     if (harfsoni[harf]) {
+//       harfsoni[harf]++;
+//     } else {
+//       harfsoni[harf] = 1;
+//     }
+//   }
+
+//   for (const harf in harfsoni) {
+//     console.log(`${harf} ${harfsoni[harf]} ta topildi`);
+//   }
+// }
+
+// const matn = "Salom mmeeennn ssii kkkkaa akkksa ksmkallkkejj";
+// harf_sanash(matn);
+
 // 7. Berilgan sonlar massivida faqat juft sonlarni
 //  qaytaradigan funksiya yozing.
+
+// function jusft(a) {
+//   const jusft_sonlar = [];
+//   for (let i = 1; i <= sonlar.length; i++) {
+//     if (i % 2 == 0) {
+//       jusft_sonlar.push(i);
+//     }
+//   }
+//   return jusft_sonlar;
+// }
+
+// const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(jusft(sonlar));
+
 // 8. Massivdagi stringlarni uzunligi bo'yicha saralash
 // Berilgan satrlar massivini so'z uzunligi bo'yicha
 // o'sish tartibida saralovchi funksiya yozing.
 // Ps: sort() va length methodlaridan foydalaning.
+// function uzunsoz(matn) {
+//     return matn.sort((a, b) => a.length - b.length);
+// }
+
+// // Misol
+// const matn = ["olma", "banan", "qulpunoy", "uzum", "shaftoli"];
+// console.log(uzunsoz(matn));
+
 // 9. Berilgan satrning birinchi va oxirgi belgisini
 // almashtiradigan funksiya yozing.
+// function alishgan(list1) {
+//   let a = list1[0];
+//   list1[0] = list1[list1.length - 1];
+//   list1[list1.length - 1] = a;
+//   return list1;
+// }
+
+// const matn = ["olma", "banan", "qulpunoy", "uzum", "shaftoli"];
+// console.log(alishgan(matn));
 // 10. Ikkita massivning umumiy elementlarini
 // qaytaradigan funksiya yozing.
+// function oxshash(list1, list2) {
+//   return list1.filter((belgi) => list2.includes(belgi));
+// }
+
+// const list1 = [1, 2, 3, 4, 5];
+// const list2 = [3, 4, 5, 6, 7];
+
+// console.log(oxshash(list1, list2));
+
 // 11. Sonlar massivini o'sish bo'yicha saralash
 // Berilgan sonlar massivini o'sish tartibida
 // saralaydigan funksiya yozing.
+// function tartiblash(list1) {
+//   return list1.sort();
+// }
+
+// const matn = [1, 7, 2, 3, 2, 8, 10];
+// console.log(tartiblash(matn));
 // 12. Massiv elementlarini birlashtirish
 // Berilgan satrlar massivini yagona satrga
 //  birlashtiradigan funksiya yozing.
