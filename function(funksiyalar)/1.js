@@ -13,11 +13,11 @@
 
 // pc(16, 256, "RTX 4060", "Ryzen 7 6800h", "Full hd ips");
 
-function sqr(num) {
-    return num * num;
+// function sqr(num) {
+//     return num * num;
 
-}
+// }
 
-let result = sqr(55);
-console.log(sqr(55));
-console.log(result);
+// let result = sqr(55);
+// console.log(sqr(55));
+// console.log(result);
