@@ -130,15 +130,18 @@
 
 // 9. Berilgan satrning birinchi va oxirgi belgisini
 // almashtiradigan funksiya yozing.
-// function alishgan(list1) {
+// function alishgan(matn) {
+//   const list1 = matn.split(" ");
 //   let a = list1[0];
 //   list1[0] = list1[list1.length - 1];
 //   list1[list1.length - 1] = a;
-//   return list1;
+//   return list1.join(" ");
 // }
 
-// const matn = ["olma", "banan", "qulpunoy", "uzum", "shaftoli"];
-// console.log(alishgan(matn));
+// let matn = "Salom mening ismim islomjon";
+// let soz = alishgan(matn);
+// console.log(soz);
+
 // 10. Ikkita massivning umumiy elementlarini
 // qaytaradigan funksiya yozing.
 // function oxshash(list1, list2) {
