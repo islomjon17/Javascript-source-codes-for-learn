@@ -49,6 +49,22 @@
 // let gap = "Salom Dunyo";
 // console.log(teskari_harf(gap));
 
+// function teskari_harf(gap) {
+//   let natija = "";
+//   for (let i = 0; i < gap.length; i++) {
+//     let harf = gap[i];
+//     if (harf === harf.toUpperCase()) {
+//       natija += harf.toLowerCase();
+//     } else {
+//       natija += harf.toUpperCase();
+//     }
+//   }
+//   return natija;
+// }
+
+// let gap = "Salom Dunyo";
+// console.log(teskari_harf(gap));
+
 // 5.Berilgan sonlar massivida eng katta va eng
 // kichik sonni topadigan funksiya yozing.
 
@@ -206,4 +222,4 @@
 //     return str.split(' ').reverse().join(' ');
 // }
 
-// console.log(teskari("Salom dunyo")); 
+// console.log(teskari("Salom dunyo"));
