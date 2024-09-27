@@ -144,24 +144,24 @@
 
 // 10. Ikkita massivning umumiy elementlarini
 // qaytaradigan funksiya yozing.
-// function oxshash(list1, list2) {
-//   return list1.filter((belgi) => list2.includes(belgi));
-// }
+function oxshash(list1, list2) {
+  return list1.filter((belgi) => list2.includes(belgi));
+}
 
-// const list1 = [1, 2, 3, 4, 5];
-// const list2 = [3, 4, 5, 6, 7];
+const list1 = [1, 2, 3, 4, 5];
+const list2 = [3, 4, 5, 6, 7];
 
-// console.log(oxshash(list1, list2));
+console.log(oxshash(list1, list2));
 
 // 11. Sonlar massivini o'sish bo'yicha saralash
 // Berilgan sonlar massivini o'sish tartibida
 // saralaydigan funksiya yozing.
-// function tartiblash(list1) {
-//   return list1.sort();
-// }
+function tartiblash(list1) {
+  return list1.sort((a,b) => a-b);
+}
 
-// const matn = [1, 7, 2, 3, 2, 8, 10];
-// console.log(tartiblash(matn));
+const matn = [1, 7, 2, 3, 2, 8, 10];
+console.log(tartiblash(matn));
 // 12. Massiv elementlarini birlashtirish
 // Berilgan satrlar massivini yagona satrga
 //  birlashtiradigan funksiya yozing.
