@@ -2,12 +2,12 @@
 // sonlardan iborat array berilgan ushbu arraydan
 // foydalanib yangi array yarating va ushbu arrayda
 // faqat juft sonlarni consolga natijani chiqaring.
-const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const jusft_sonlar = sonlar.filter((item)=>
-{
-    return item%2 === 0
-}
-);
+// const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const jusft_sonlar = sonlar.filter((item)=>
+// {
+//     return item%2 === 0
+// }
+// );
 
 // for (let i = 1; i <= sonlar.length; i++) {
 //   if (i % 2 == 0) {
@@ -20,16 +20,16 @@ console.log(jusft_sonlar);
 //   sonlardan iborat array berilgan ushbu arraydan
 //   foydalanib yangi array yarating va ushbu arrayda
 //   faqat toq sonlarni consolga natijani chiqaring.
-// const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const jusft_sonlar = [];
-// for (let i = 1; i <= sonlar.length; i++) {
-//   if (i % 2 == 0) {
-//     console.log("Topilmadi");
-//   } else {
-//     jusft_sonlar.push(i);
-//   }
-// }
-// console.log(jusft_sonlar);
+const sonlar = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const jusft_sonlar = [];
+for (let i = 1; i <= sonlar.length; i++) {
+  if (i % 2 == 0) {
+    console.log("Topilmadi");
+  } else {
+    jusft_sonlar.push(i);
+  }
+}
+console.log(jusft_sonlar);
 
 // 3-masala matnlar = ["salom", "hayr", "javascript", "filter", "mavzu", "masala"]
 // so`zlardan iborat array berilgan ushbu arraydan
@@ -52,14 +52,14 @@ console.log(jusft_sonlar);
 // array berliga berilgan arraydan foydalanib yangi array yarating va
 // so`zlar ichida   "java"  qatnashgan bo`lsa o`sha so`zlarni consolga chiqaring.
 
-// const massiv = ["JavaScript", "Java", "Python", "Node.js", "React", "Angular"];
-// for (let i = 0; i < massiv.length; i++) {
-//   if (massiv[i].includes("Java")) {
-//     console.log(massiv[i]);
-//   } else {
-//     console.log("mos emas");
-//   }
-// }
+const massiv = ["JavaScript", "Java", "Python", "Node.js", "React", "Angular"];
+for (let i = 0; i < massiv.length; i++) {
+  if (massiv[i].includes("Java")) {
+    console.log(massiv[i]);
+  } else {
+    console.log("mos emas");
+  }
+}
 
 //  5-masala  const massiv = [15, 25, 35, 45, 55];
 //  array berilga berilgan arraydan foydalanib yangi
@@ -141,14 +141,14 @@ console.log(jusft_sonlar);
 // so`zlarni uzunligi 4 dan kottalarini arrayga qo`shing va consolga chiqaring
 // const sozlar = ["JavaScript", "Python", "HTML", "CSS", "React", "Node"];
 // const matn = [];
-// for (let i = 0; i < sozlar.length; i++) {
-//   if (sozlar[i].length > 4) {
-//     matn.push(sozlar[i]);
-//     console.log(sozlar[i]);
-//   } else {
-//     console.log("topilmadi");
-//   }
-// }
+for (let i = 0; i < sozlar.length; i++) {
+  if (sozlar[i].length > 4) {
+    matn.push(sozlar[i]);
+    console.log(sozlar[i]);
+  } else {
+    console.log("topilmadi");
+  }
+}
 
 // console.log(matn);
 

@@ -14,16 +14,16 @@
 // // 2) Foydalanuvchidan parol so‘rab,
 // parol uzunligi kamida 8 ta belgidan iborat bo‘lsa va
 // raqam ham aralashsagina  "Parol qabul qilindi", aks holda "Parol juda sodda" deb chiqaring.
-// const parol = prompt("Iltimos, parolingizni kiriting:");
+const parol = prompt("Iltimos, parolingizni kiriting:");
 
-// const uzunlikYaroqli = parol.length >= 8;
-// const raqamYaroqli = /\d/.test(parol);
+const uzunlikYaroqli = parol.length >= 8;
+const raqamYaroqli = /\d/.test(parol);
 
-// if (uzunlikYaroqli && raqamYaroqli) {
-//   alert("Parol qabul qilindi");
-// } else {
-//   alert("Parol juda sodda");
-// }
+if (uzunlikYaroqli && raqamYaroqli) {
+  alert("Parol qabul qilindi");
+} else {
+  alert("Parol juda sodda");
+}
 // // 3) Foydalanuvchi email manzilini kiritsa, agar @ va .
 //  belgilar mavjud bo‘lsa "Email to‘g‘ri", aks holda "Email noto‘g‘ri" deb chiqaring.
 
@@ -82,7 +82,7 @@
 
 // // 7) Foydalanuvchidan raqamli matn so‘rab, agar matn faqat
 // raqamlardan iborat bo‘lsa, raqamlarni teskari tartibda chiqarish,
-// aks holda "Noto‘g‘ri kirish" deb xabar bering.
+// // aks holda "Noto‘g‘ri kirish" deb xabar bering.
 // let userInput = prompt("Raqamli matn kiriting:");
 
 // if (/^\d+$/.test(userInput)) {
@@ -112,26 +112,26 @@
 // harflar bo‘lsa, uni katta harflarga o‘zgartiring, aks holda
 // kichik harflarga o‘zgartiring.
 
-// let userInput = prompt("Iltimos, matn kiriting:");
+var userInput = prompt("Iltimos, matn kiriting:");
 
-// if (/^[a-z]+$/.test(userInput)) {
-//   // /^[a-z]+$/ - Regular ifoda yordamida matn faqat kichik harflardan iboratligini tekshiradi.
-//   let upperCaseText = userInput.toUpperCase();
-//   console.log("Katta harflarda:", upperCaseText);
-// } else {
-//   let lowerCaseText = userInput.toLowerCase();
-//   console.log("Kichik harflarda:", lowerCaseText);
-// }
+if (/^[a-z]+$/.test(userInput)) {
+  // /^[a-z]+$/ - Regular ifoda yordamida matn faqat kichik harflardan iboratligini tekshiradi.
+  let upperCaseText = userInput.toUpperCase();
+  console.log("Katta harflarda:", upperCaseText);
+} else {
+  let lowerCaseText = userInput.toLowerCase();
+  console.log("Kichik harflarda:", lowerCaseText);
+}
 
 // // 10) Foydalanuvchidan telefon raqamini so‘rab, agar raqam
 // uzunligi 10 ta bo‘lsa va faqat raqamlardan iborat bo‘lsa
 // "Telefon raqami to‘g‘ri", aks holda "Telefon raqami noto‘g‘ri" deb chiqaring.
-// let raqam = parseInt(prompt("Raqamizi kiriting: "))
-// if (raqam.length === 10 && /^\d+$/.test(raqam)) {
-//   console.log("Telefon raqami to‘g‘ri");
-// } else {
-//   console.log("Telefon raqami noto‘g‘ri");
-// }
+let raqam = parseInt(prompt("Raqamizi kiriting: "));
+if (raqam.length === 10 && /^\d+$/.test(raqam)) {
+  console.log("Telefon raqami to‘g‘ri");
+} else {
+  console.log("Telefon raqami noto‘g‘ri");
+}
 
 // // 11)  Foydalanuvchidan so‘z yoki ibora so‘rab, agar u
 // palindrom bo‘lsa "Palindrom", aks holda "Palindrom emas" deb xabar bering.
@@ -146,12 +146,12 @@
 // // 12)  Foydalanuvchidan matn so‘rab, agar birinchi va
 // oxirgi harflar bir xil bo‘lsa "Bir xil harf", aks holda
 // "Harflar farq qiladi" deb chiqaring.
-// let soz = prompt("So'zni kiriting");
-// if (soz[0] == soz.slice(-1)) {
-//   console.log("Bir xil harf");
-// } else {
-//   console.log("Harflar farq qiladi");
-// }
+let soz = prompt("So'zni kiriting");
+if (soz[0] == soz.slice(-1)) {
+  console.log("Bir xil harf");
+} else {
+  console.log("Harflar farq qiladi");
+}
 
 // // 13) Foydalanuvchidan URL so‘rab, agar
 // http:// yoki https:// bilan boshlansa "URL to‘g‘ri",
@@ -188,12 +188,12 @@
 //  harf bo‘lsa, birinchi katta harfni chiqarish, aks holda
 //  "Katta harf yo‘q" deb xabar bering.
 
-// let matn = "Codial";
-// if (/[A-Z]/.test(matn)) {
-//   console.log(matn.replace(/\d+/g, "").replace(/[a-z]+/g, ""));
-// } else {
-//   console.log("Katta harf yo‘q");
-// }
+let matn = "Codial";
+if (/[A-Z]/.test(matn)) {
+  console.log(matn.replace(/\d+/g, "").replace(/[a-z]+/g, ""));
+} else {
+  console.log("Katta harf yo‘q");
+}
 
 // // 17) Foydalanuvchidan FIO (Familiya, Ism, Otasining ismi)
 //  so‘rab, agar har bir qism bosh harf bilan boshlansa
@@ -223,25 +223,25 @@
 // // 19) Foydalanuvchidan URL so‘rab, agar URL parametrlarga
 //  ega bo‘lsa, parametrlarni ajratib chiqarish, aks holda
 //  "Parametrlar yo‘q" deb chiqaring.
-// let url = prompt("URL kiriting: ")
-// let urlObj = new URL(url);
-// let params = urlObj.searchParams;
+let url = prompt("URL kiriting: ");
+let urlObj = new URL(url);
+let params = urlObj.searchParams;
 
-// // Parametrlar mavjudligini tekshirish
-// if (params.toString()) {
-//   // Parametrlarni chiqarish
-//   params.forEach((value, key) => {
-//     console.log(`${key}: ${value}`);
-//   });
-// } else {
-//   console.log("Parametrlar yo‘q");
-// }
+// Parametrlar mavjudligini tekshirish
+if (params.toString()) {
+  // Parametrlarni chiqarish
+  params.forEach((value, key) => {
+    console.log(`${key}: ${value}`);
+  })
+} else {
+  console.log("Parametrlar yo‘q")
+}
 // // 20) Foydalanuvchidan matn so‘rab, agar matnda harflar va
 // raqamlar aralash bo‘lsa, "Miksa to‘g‘ri", aks holda
 // "Miksa noto‘g‘ri" deb xabar bering.
-// // let matn = prompt("Matnni kiriting: ")
-// if (/[a-zA-Z]/.test(matn) && /\d/.test(matn)) {
-//   console.log("Miksa to‘g‘ri");
-// } else {
-//   console.log("Miksa noto‘g‘ri");
-// }
+// let matn = prompt("Matnni kiriting: ")
+if (/[a-zA-Z]/.test(matn) && /\d/.test(matn)) {
+  console.log("Miksa to‘g‘ri");
+} else {
+  console.log("Miksa noto‘g‘ri");
+}
